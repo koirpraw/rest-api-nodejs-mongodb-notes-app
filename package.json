@@ -1,0 +1,21 @@
+{
+  "name": "rest-api-nodejs-mongodb-notes-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "git": "git init && echo -e \".env\\nnode_modules\" > .gitignore"
+  },
+  "keywords": ["node.js", "express", "MongoDB", "rest-api", "CRUD", "notes-app", "API"],
+  "author": "Praweg Koirala",
+  "license": "ISC",
+  "description": "REST API with Node.js, Express, and PostgreSQL.CRUD for notes app",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "nodemon": "^3.1.4"
+  }
+}
