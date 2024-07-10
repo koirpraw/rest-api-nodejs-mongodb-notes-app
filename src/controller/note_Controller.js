@@ -2,7 +2,7 @@ const Note = require('../model/note')
 
 exports.createNote = async (req, res) => {
     const date = new Date();
-    // const createdAtStamp = date.toLocaleString();
+    const createdAtStamp = date.toLocaleString();
     try {
         let newNote = {
             title: req.body.title,
