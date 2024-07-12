@@ -10,7 +10,7 @@
   "keywords": ["node.js", "express", "MongoDB", "rest-api", "CRUD", "notes-app", "API"],
   "author": "Praweg Koirala",
   "license": "ISC",
-  "description": "REST API with Node.js, Express, and PostgreSQL.CRUD for notes app",
+  "description": "REST API with Node.js, Express, and MongoDB.CRUD for notes app",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
