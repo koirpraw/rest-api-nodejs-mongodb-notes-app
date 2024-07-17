@@ -1,7 +1,13 @@
 # REST API with Node.js, Express and MongoDB(Driver: mongodb)
 
 ## Description
-This is a simple REST API that allows you to perform CRUD operations on a document based noSQL database(MongoDB) . The API is built with Node.js, Express.js and MongoDB. The driver used to connect to the MongoDB database is mongodb. 
+This project is a REST API for a note-taking application, built using Node.js, Express.js, and MongoDB with the official MongoDB driver. The API follows the MVC (Model-View-Controller) pattern and includes robust exception handling practices. It supports CRUD operations on a document-based NoSQL database (MongoDB) and handles the following data types for notes: `title`, `description`, `isLiked` (boolean), `difficulty` (integer), and `createdAt` (date).
+
+## Features
+- **CRUD Operations**: Create, Read, Update, and Delete notes.
+- **MVC Pattern**: Organized code structure for maintainability.
+- **Exception Handling**: Good practices for error management.
+- **Screenshots**: Visual examples of successful API operations using Postman.
 
 ## Local Server :
 <img width="1493" alt="localhost" src="https://github.com/user-attachments/assets/4ca859ef-a629-45ad-ab9b-11395076fcb9">
