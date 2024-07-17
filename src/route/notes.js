@@ -3,7 +3,7 @@ const app = express();
 
 const router = express.Router();
 
-const noteController = require('../controller/note_Controller');
+const noteController = require('../controller/noteController');
 
 router.post('/', noteController.createNote);
 router.get('/', noteController.getAllNotes);

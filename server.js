@@ -1,8 +1,10 @@
 const express = require('express');
 
+const db = require('./src/config/dbConfig');
+
 const app = express();
 
-const PORT = process.env.PORT || 4002;
+const PORT = process.env.PORT || 4000;
 
 const cors = require('cors')
 
@@ -17,10 +19,12 @@ app.use(express.json());
 
 const notesRouter = require('./src/route/notes');
 
+db.connectDB();
+
 app.use('/api/notes', notesRouter);
 
 app.get('/', (req, res) => {
-    res.send("Welocme to the default route of notes app with Mongodb Driver");
+    res.send("Welcome to the default route of notes app with Mongodb Driver");
 
 })
 
