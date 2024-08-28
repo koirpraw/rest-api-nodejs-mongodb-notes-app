@@ -17,7 +17,7 @@ app.use(cors(corsOptions));
 
 app.use(express.json());
 
-const notesRouter = require('./src/route/notes');
+const notesRouter = require('./src/route/noteRoute');
 
 db.connectDB();
 
