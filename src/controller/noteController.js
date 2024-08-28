@@ -3,13 +3,14 @@ const Note = require('../model/note')
 exports.createNote = async (req, res) => {
     const date = new Date();
     const createdAtStamp = date.toLocaleString();
+    const { title, description, difficulty } = req.body;
     try {
         let newNote = {
-            title: req.body.title,
-            description: req.body.description,
+            title,
+            description,
             is_liked: false,
-            difficulty: 1,
-            created_at: date
+            difficulty,
+            created_at: createdAtStamp
         };
         let result = await Note.insertNote(newNote);
         res.status(200).json(result)
